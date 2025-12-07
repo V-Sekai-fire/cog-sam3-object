@@ -1,0 +1,28 @@
+[project]
+name = "cog-sam3-object"
+version = "0.1.0"
+description = "SAM3 Video Segmentation with 3D Object Generation"
+requires-python = ">=3.11"
+dependencies = [
+    "torch==2.4.1",
+    "numpy<2.0",
+    "pillow",
+    "imageio[ffmpeg]",
+    "opencv-python",
+    "open3d>=0.18.0",
+    "pygltflib>=1.15.0",
+    "scipy>=1.10.0",
+    "gsply>=0.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+# decord doesn't have macOS ARM64 wheels, so it's optional for local testing
+decord = [
+    "decord; sys_platform != 'darwin' or platform_machine != 'arm64'",
+]
+
+[tool.uv]
+package = false

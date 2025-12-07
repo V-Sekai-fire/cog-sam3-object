@@ -5,3 +5,8 @@ pillow
 imageio[ffmpeg]
 opencv-python
 decord
+# 3D mesh extraction and GLTF conversion
+open3d>=0.18.0
+pygltflib>=1.15.0
+scipy>=1.10.0
+gsply>=0.1.0

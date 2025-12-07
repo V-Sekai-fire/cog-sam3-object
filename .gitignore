@@ -1,3 +1,5 @@
 __pycache__/
 .cog
 checkpoints/
+thirdparty/sam-3d-objects/.git
+thirdparty/sam-3d-objects/.gitignore
